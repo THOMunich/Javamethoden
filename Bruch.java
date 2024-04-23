@@ -10,4 +10,20 @@ public class Bruch {
         System.out.println("   Bruch = " + zaehler + " / " + nenner);
         JOptionPane.showMessageDialog(null, " Bruch = " + zaehler + " / " + nenner); 
     }
+
+    void kuerzen() {
+        var m = Math.abs(zaehler);
+        var n = Math.abs(nenner);
+        var r = m % n;
+        while (r > 0) {
+            m = n;
+            n = r;
+            r = m % n;
+        }
+
+        zaehler /= n;
+        nenner /= n;
+        }
+        
 }
+
