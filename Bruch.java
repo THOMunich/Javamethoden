@@ -24,6 +24,9 @@ public class Bruch {
         zaehler /= n;
         nenner /= n;
         }
-        
+    void gekuerztausgeben() {
+            kuerzen();
+            ausgeben();
+        }
 }
 
