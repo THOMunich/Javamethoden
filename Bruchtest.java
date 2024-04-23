@@ -12,9 +12,8 @@ public class Bruchtest {
         b.nenner = 12;
         b.ausgeben();
         
-        System.out.println("  \n und nach dem Kuerzen: ");
-        JOptionPane.showMessageDialog(null,"  /n und nach dem Kuerzen: ");
-        
-        b.gekuerztausgeben();
-   }
+        b.erweitern(4);
+        System.out.println();
+        b.ausgeben();
+    }
 }
