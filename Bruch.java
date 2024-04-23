@@ -34,5 +34,10 @@ public class Bruch {
         zaehler = zaehler * a;
         nenner = nenner * a;
         }
+
+    void multiplizieren(Bruch m) {
+        zaehler = zaehler * m.zaehler;
+        nenner = nenner * m.nenner;
+    }
 }
 

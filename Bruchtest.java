@@ -7,13 +7,17 @@ public class Bruchtest {
     // Kommentar
     public static void main(String[] args) {
 
+        Bruch a = new Bruch ();
+        a.zaehler = 3;
+        a.nenner = 4;
+
         Bruch b = new Bruch ();
         b.zaehler = 3;
-        b.nenner = 12;
-        b.ausgeben();
+        b.nenner = 4;
+        a.ausgeben();
         
-        b.erweitern(4);
+        a.multiplizieren(b);
         System.out.println();
-        b.ausgeben();
+        a.ausgeben();
     }
 }
