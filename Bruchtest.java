@@ -8,8 +8,8 @@ public class Bruchtest {
     public static void main(String[] args) {
 
         Bruch a = new Bruch ();
-        a.zaehler = 7;
-        a.nenner = 10;
+        a.zaehler = Double.parseDouble(JOptionPane.showInputDialog(null, "Bitte die erste Zahl eingeben: "));
+        a.nenner = Double.parseDouble(JOptionPane.showInputDialog(null, "Bitte die zweite Zahl eingeben: "));
 
         Bruch b = new Bruch ();
         b.zaehler = 3;

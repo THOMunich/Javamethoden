@@ -3,8 +3,8 @@ package JavaMethoden;
 import javax.swing.JOptionPane;
 
 public class Bruch {
-    int zaehler;
-    int nenner;
+    double zaehler;
+    double nenner;
 
     void ausgeben() { 
         System.out.println("   Bruch = " + zaehler + " / " + nenner);
@@ -27,6 +27,10 @@ public class Bruch {
             ausgeben();
         }
     void erweitern(int a) {
+        zaehler = zaehler * a;
+        nenner = nenner * a;
+        }
+    void erweitern (double a) {
         zaehler = zaehler * a;
         nenner = nenner * a;
         }
