@@ -50,7 +50,22 @@ public class Bruch {
         zaehler = z;
         nenner = n;
         }
-    double dezimalwert (int zaehler, int nenner) {
+    // double dezimalwert (int zaehler, int nenner) {
+    //     return (double)  zaehler/nenner;
+    //     }
+    
+    double dezimalwert () {
         return (double)  zaehler/nenner;
         }
+
+    int signum() {
+        if (this.dezimalwert() == 0.0) {
+            return 0;
+        }
+        if (this.dezimalwert() > 0.0) {
+            return 1;
+        }
+        return -1;
+        }
+
 }
