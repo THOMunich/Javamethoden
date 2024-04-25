@@ -8,20 +8,26 @@ public class Bruchtest {
     public static void main(String[] args) {
 
         Bruch a = new Bruch ();
-        a.zaehler = Double.parseDouble(JOptionPane.showInputDialog(null, "Bitte die erste Zahl eingeben: "));
-        a.nenner = Double.parseDouble(JOptionPane.showInputDialog(null, "Bitte die zweite Zahl eingeben: "));
+        a.zaehler = Double.parseDouble(JOptionPane.showInputDialog(null, "Bruch A, bitte erste Zahl eingeben: "));
+        a.nenner = Double.parseDouble(JOptionPane.showInputDialog(null, "Bruch A, bitte zweite Zahl eingeben: "));
 
         Bruch b = new Bruch ();
-        b.zaehler = 3;
-        b.nenner = 12;
-        a.ausgeben();
+        b.zaehler = Double.parseDouble(JOptionPane.showInputDialog(null, "Bruch B, bitte erste Zahl eingeben: "));
+        b.nenner = Double.parseDouble(JOptionPane.showInputDialog(null, "Bruch B, bitte zweite Zahl eingeben: "));
+        System.out.println();
+        a.ausgebenA();
         
         a.multiplizieren(b);
         System.out.println();
-        a.ausgeben();
+        a.ausgebenA();
 
-        b.setze(5, 3);
+        b.setze(1, 1);
         System.out.println();
-        b.ausgeben();
-    }
+        b.ausgebenB();
+        
+        System.out.println();
+        System.out.println("Dezimalwert: " + b.dezimalwert (2,6));
+        JOptionPane.showMessageDialog(null,"Dezimalwert: " +  b.dezimalwert (2,6));
+
+        }
 }

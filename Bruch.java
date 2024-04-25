@@ -6,10 +6,14 @@ public class Bruch {
     double zaehler;
     double nenner;
 
-    void ausgeben() { 
-        System.out.println("   Bruch = " + zaehler + " / " + nenner);
-        JOptionPane.showMessageDialog(null, " Bruch = " + zaehler + " / " + nenner); 
-    }
+    void ausgebenA() { 
+        System.out.println("   Bruch A = " + zaehler + " / " + nenner);
+        JOptionPane.showMessageDialog(null, " Bruch A = " + zaehler + " / " + nenner); 
+        }
+    void ausgebenB() { 
+        System.out.println("   Bruch B = " + zaehler + " / " + nenner);
+        JOptionPane.showMessageDialog(null, " Bruch B = " + zaehler + " / " + nenner); 
+        }
     void kuerzen() {
         var m = Math.abs(zaehler);
         var n = Math.abs(nenner);
@@ -24,7 +28,7 @@ public class Bruch {
         }
     void gekuerztausgeben() {
             kuerzen();
-            ausgeben();
+            ausgebenA();
         }
     void erweitern(int a) {
         zaehler = zaehler * a;
@@ -46,5 +50,7 @@ public class Bruch {
         zaehler = z;
         nenner = n;
         }
+    double dezimalwert (int zaehler, int nenner) {
+        return (double)  zaehler/nenner;
+        }
 }
-
